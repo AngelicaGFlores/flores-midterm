@@ -1,87 +1,112 @@
-# Webpack 4 Boilerplate for beginners
-A basic webpack 4 boilerplate for beginners to start with any JS/ES6 based project. This project uses basic html with scss. It includes working background images in scss as well as file loading in html. Uses Dev Server and Sourcemaps for easy debugging. Includes stylelinting and fixes for cleaner css. Uses Babel to convert ES6 to ES5. 
-<br>
-## Guide
-This basic boilerplate is the final output of this comprehensive write up on Medium, plus several additions. I recommend to read this article to know the insight of how you can configure webpack from scratch.
-[Webpack 3 quickstarter: Configure webpack from scratch](https://medium.com/@nirjhor123/webpack-3-quickstarter-configure-webpack-from-scratch-30a6c394038a)
-<br>
-1. Navigate to the appropriate parent folder of where your project will be located. This example uses a folder on the desktop called "class projects". NOTE: Start from your home directory "~".
-
-```
-$ cd desktop/class-projects
-```
-
-2. Clone the webpack-starter into your parent folder with the following command:
-
-```
-$ git clone https://github.com/SJCCodeTalk/webpack-starter-2019.git
-```
-3. Change the name of webpack-starter to reflect the name of your project
-
-4. Change your directory to the project folder. 
-
-```
-$ cd new-project
-```
-
-5. Install dependencies
-
-```
-$ npm install
-```
-
-
-6.  Develop locally with webpack-dev-server
-
-```
-$ npm run dev
-```
-
-## For Development version
-
-```
-$ npm run dev
-```
-
-In your browser, navigate to: [http://localhost:2000/](http://localhost:2000/)
-
-## For Production version
-
-```
-$ npm run build
-```
-This is the final distribution version of your project located in the /dist folder
-
-### To restart your project after leaving it
-
-1. Navigate to your project folder in terminal
-
-2. Run Dev. 
-
-```
-$ npm run dev
-```
-
-Note: it is safe to move from dev to build and build to dev. Just run [control] "c" to cancel dev processes if in the dev version.
  
-## Loaders and Plugins used in this boilerplate
 
-### Loaders
-* html-loader
-* sass-loader
-* css-loader
-* style-loader
-* file-loader
-* babel-loader
+1) Create a project folder named YOURNAME-MIDTERM. Inside the folder, create your index, stylesheet, and images folder (if using webpack, you will give us the dist folder in the same structure that it outputs images/css).
 
-### Plugins
-* clean-webpack-plugin
-* mini-css-extract-plugin
-* html-webpack-plugin
-* style-lint-plugin
-* optimize-css-assets-webpack-plugin
-* uglify-js-plugin
+ 
 
-# webpack-starter-2019
-# flores-midterm
-# flores-midterm
+2) Fill your html file with all the basic html tags and doctype. Make sure to include a title in the head that says “YourName’s Midterm.”
+
+ 
+
+3) Link to your stylesheet (and bootstrap if you are using it) (if using webpack, this will happen in your final build). 
+
+ 
+
+4) Create divs for the following page elements -
+
+header, navigation, container, sidebar, footer. You should be using semantic div tags when possible and divs with IDs or Classes when there is no semantic div equivalent.
+
+Add styles in your CSS to have your divs appear similar to the following diagram (You will need to set widths, background color, and positioning. You may disregard padding/margins/rounded corners here.)
+
+MidtermLayout-1.png
+
+ 
+
+5) Add an h1 to your header that says “YourName’s Midterm.”
+
+In your stylesheet, add css to make the h1 text dark blue (use a hex value) and set the font size to a value of your choosing.
+
+ 
+
+6) Add a paragraph to your main content area. It should be at least a few sentences long. Placeholder text is okay.
+
+In your stylesheet, add css to make the paragraph text blue (use a hex value) and set the font size.
+
+ 
+
+7) Choose two Google Fonts and add them to your html.
+
+Apply one of your font classes to your h1 and the other to the paragraph in your HTML. (In other words, pick one Google font for your h1 text and another for your paragraph text).
+
+ 
+
+8) Create an unordered list inside your navigation div.
+
+Style the list using CSS to make the items sit next to each other and get rid of the bullets.
+
+The list should consist of 3 different items. They should link to http://google.com (Links to an external site.).
+
+Make sure to add CSS to get rid of the underline. You may also want to add padding.
+
+ 
+
+9) Add CSS to make the menu links (from Part 8 above) dark green, and to turn red on hover.
+
+ 
+
+10)  Download the following two images. Put them in your images folder.
+
+Use Pixelmator to cut out the moon and paste it in the sky of the second image of the mountains.
+
+The final image should be exactly 200px wide and 150px tall and saved in your images folder.
+
+a) http://upload.wikimedia.org/wikipedia/commons/6/62/The_Blue_Moon.jpeg (Links to an external site.)
+
+b) http://cache.desktopnexus.com/thumbseg/62/62074-bigthumbnail.jpg (Links to an external site.)
+
+ 
+
+11)  In the main container of your page, below your paragraph, create two divs.
+
+One of these should have a class “gallery1” and the second should have a class “gallery2.”
+
+ 
+
+12)  Inside the div with class “gallery1” create an image gallery using flex.
+
+The div should display the image that you just created 4 times at that exact size. (they should sit side by side and drop down as the screen gets more narrow)
+
+ 
+
+13)  Inside the div with class “gallery2” create an image gallery using inline-block.
+
+The table should display the image that you just created 4 times at that exact size. (they should sit side by side and drop down as the screen gets more narrow)
+
+ 
+
+14)  In the sidebar, add a paragraph. Use the same google font that you used for the other paragraph.
+
+ 
+
+15)  In the sidebar under the paragraph, create a CTA.
+
+The CTA should be green with a dark green border.
+
+It should have rounded corners and a box shadow.
+
+Be sure to create a hover for the CTA that changes to a dark pink border and pink background upon hover.
+
+ 
+
+BONUS: (5 points each)
+
+Organize your CSS (or scss) and separate by using comment sub-headings.
+Add a media query so that when your page is at least 500px wide, the body has a background image of your choosing, but under 500px, it remains white. 
+In your footer, use the html code to add a copyright symbol, current year, and your name.
+ 
+
+Turn it in:
+
+Compress/zip your entire midterm folder. Make sure your name is in the file name.
+
+Upload the zipped folder to this test question.
